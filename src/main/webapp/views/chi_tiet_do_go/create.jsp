@@ -6,6 +6,7 @@
 <html>
 <head>
     <title>SD17313 - Thêm Chi Tiết Đồ Gỗ</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -20,7 +21,7 @@
     <sf:form action="${action}" method="post"
              modelAttribute="chiTietDoGo">
 
-        <div>
+        <div class="d-flex">
             <label>Sản Phẩm</label>
             <div>
                 <sf:select path="idSanPham">
@@ -30,8 +31,11 @@
                 </sf:select>
             </div>
         </div>
+        <button type="submit" value="them-nhanh-sp" name="them-nhanh-sp">
+            <i class='bx bxs-plus-circle'>Thêm nhanh sp</i>
+        </button>
 
-        <div>
+        <div class="d-flex">
             <label>Loại Sản Phẩm</label>
             <div>
                 <sf:select path="idLoaiSP">
@@ -41,8 +45,11 @@
                 </sf:select>
             </div>
         </div>
+        <button type="submit" value="them-nhanh-lsp" name="them-nhanh-lsp">
+            <i class='bx bxs-plus-circle'>Thêm nhanh lsp</i>
+        </button>
 
-        <div>
+        <div class="d-flex">
             <label>Dòng Gỗ</label>
             <div>
                 <sf:select path="idDongGo">
@@ -52,9 +59,12 @@
                 </sf:select>
             </div>
         </div>
+        <button type="submit" value="them-nhanh-dongGo" name="them-nhanh-dongGo">
+            <i class='bx bxs-plus-circle'>Thêm nhanh dòng gỗ</i>
+        </button>
 
 
-        <div>
+        <div class="d-flex">
             <label>Nhà Cung Cấp</label>
             <div>
                 <sf:select path="idNhaCungCap">
@@ -64,9 +74,13 @@
                 </sf:select>
             </div>
         </div>
+        <button type="submit" value="them-nhanh-ncc" name="them-nhanh-ncc">
+            <i class='bx bxs-plus-circle'>Thêm nhanh NCC</i>
+        </button>
 
 
-        <div>
+
+        <div class="d-flex">
             <label>Nguồn Gốc</label>
             <div>
                 <sf:select path="idNguonGoc">
@@ -76,8 +90,11 @@
                 </sf:select>
             </div>
         </div>
+        <button type="submit" value="them-nhanh-nguon-goc" name="them-nhanh-nguon-goc">
+            <i class='bx bxs-plus-circle'>Thêm nhanh Nguồn Gốc</i>
+        </button>
 
-        <div>
+        <div class="d-flex">
             <label>Đơn Vị Tính</label>
             <div>
                 <sf:select path="idDonViTinh">
@@ -87,7 +104,12 @@
                 </sf:select>
             </div>
         </div>
-        <div>
+        <button type="submit" value="them-nhanh-DVT" name="them-nhanh-DVT">
+            <i class='bx bxs-plus-circle'>Thêm nhanh DVT</i>
+        </button>
+
+
+        <div class="d-flex">
             <label>Ảnh</label>
             <div>
                 <sf:select path="idAnh">
@@ -97,6 +119,9 @@
                 </sf:select>
             </div>
         </div>
+        <button type="submit" value="them-nhanh-anh" name="them-nhanh-anh">
+            <i class='bx bxs-plus-circle'>Thêm nhanh Ảnh</i>
+        </button>
 
 
         <div>
@@ -149,7 +174,7 @@
         </div>
 
         <div>
-            <button class="btn btn-primary">Thêm mới</button>
+            <button class="btn btn-primary" type="submit" name="add">Thêm mới</button>
         </div>
     </sf:form>
 </div>
